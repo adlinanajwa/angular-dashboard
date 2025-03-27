@@ -1,12 +1,14 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  standalone: true,
+  imports: [RouterModule], // ✅ Import RouterModule
+  template: `<router-outlet></router-outlet>`, // ✅ This will now work
 })
 export class AppComponent {
-  title = 'dashboard';
+  title(title: any) {
+    throw new Error('Method not implemented.');
+  }
 }

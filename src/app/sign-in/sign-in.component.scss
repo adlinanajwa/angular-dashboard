@@ -1,0 +1,99 @@
+/* Center the whole login container */
+.sign-in-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height */
+    background-color: #f8f9fa; /* Light background */
+}
+
+/* Full-width container */
+.sign-in-container {
+    width: 100%;
+    max-width: 380px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sign-in-container h2 {
+    margin-bottom: 15px; /* More space below header */
+}
+
+
+/* Header inside the container */
+.sign-in-header {
+    background: #f5f5f5;
+    padding: 15px;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    width: calc(100% - 40px); /* Adjust width dynamically */
+    margin: 0 auto 20px auto; /* Center it and add bottom spacing */
+    border-radius: 8px 8px 0 0; /* Rounded corners on top */
+}
+
+
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Align everything in center */
+    width: 100%;
+}
+
+/* Form field container */
+.form-group {
+    width: 100%; /* Make fields full width */
+    margin-bottom: 15px;
+}
+
+/* Input field styling with placeholders */
+.form-group input {
+    
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box; /* Ensures padding doesn't affect width */
+    }
+
+    input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box; /* Ensures padding doesn't affect width */
+    }
+    
+    
+/* Button styling */
+button {
+    width: 40%; /* Adjust width to make it smaller */
+    max-width: 250px; /* Prevent it from being too wide */
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    display: block;
+    margin: 10px auto 0 0; /* Move slightly to the left */
+    text-align: center;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Error message */
+.error {
+    color: red;
+    font-size: 12px;
+    margin-top: 10px;
+}
